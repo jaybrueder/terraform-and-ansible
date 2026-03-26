@@ -1,5 +1,5 @@
 variable "ip" {
-  default = ["10.0.0.1", "10.0.0.2", "10.0.0.3"] # imagine these coming from eg. aws_instance.web[*].access_ip_v4
+  default = ["10.0.0.1", "10.0.0.2", "10.0.0.3"] # imagine these coming from eg. aws_instance.web[*].private_ip
 }
 
 resource "local_file" "ansible_inventory" {
